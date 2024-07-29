@@ -10,10 +10,10 @@
     "plugin:security/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["jest", "security", "prettier"],
+  "plugins": ["jest", "security", "prettier", "@typescript-eslint"],
   "parserOptions": {
     "ecmaVersion": 2018,
-    "project": "./tsconfig.json"
+    "project": "./src/tsconfig.json"
   },
   "rules": {
     "no-console": "error",
@@ -22,5 +22,6 @@
     "consistent-return": "off",
     "jest/expect-expect": "off",
     "security/detect-object-injection": "off"
-  }
+  },
+  "parser": "@typescript-eslint/parser"
 }
